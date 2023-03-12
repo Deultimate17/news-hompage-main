@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 5rem 7rem;
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.menu {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 3rem;
+    
+}
+
+ .nav-link{
+    color: hsl(236, 13%, 42%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.pics {
+   width: 95%; 
+}
+
+.pics1 {
+    display: none;
+}
+
+.homeview {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.highlight {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+    padding: 2rem 2.5rem 0rem 0rem;
+}
+
+.highlight h1 {
+    font-size: 68px;
+    font-weight: bolder;
+    width: 80%;
+    line-height: 1;
+}
+
+.platforms{
+    line-height: 1.8;
+    width: 310px;
+    padding-bottom: 4rem;
+}
+
+.read {
+    background-color:hsl(5, 85%, 63%);
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2.5rem;
+    letter-spacing: 0.3rem;
+}
+
+.breaking {
+    background-color: hsl(240, 100%, 5%);
+    padding: 2.7rem 2.7rem 0rem 2.5rem;
+    
+}
+
+.breaking h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 50px;
+    padding-bottom: 2rem;
+}
+
+.trends {
+    color: white;
+    padding-bottom: 0.7rem;
+}
+
+.breaking-news p {
+    color: hsl(233, 8%, 79%);
+    line-height: 1.8;
+    
+}
+
+.breaking-news:first-child,.breaking-news:nth-child(2){
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+}
+
+.intro {
+    row-gap: 2rem;
+    display: grid;
+}
+
+.newslist {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.fig-1 {
+    height: 150px;
+
+}
+
+.news {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.words h2 {
+    padding-bottom: 0.9rem;
+    font-size: 38px;
+    color:  hsl(233, 8%, 79%);
+}
+
+.words p {
+    padding-top: 0.9rem;
+    line-height: 1.8;
+    color:  hsl(236, 13%, 42%);
+    
+}
+
+.words p:first-child {
+    padding-right: 3rem;
+    color: hsl(236, 13%, 42%);
+}
+
+.words h6 {
+    color:hsl(240, 100%, 5%);
+    font-weight:900;
+    font-size: 15px; 
+}
+
+.active {
+    color:hsl(35, 77%, 62%);
+}
+
+.pop {
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
+.return {
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width:1200px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    .homeview {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .close-menu {
+        display: block;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 1.5rem;
+        position: relative;
+        top: 20%;
+    }
+
+    .menu-bar {
+        position: fixed;
+        right: 0;
+        top: 0%;
+        background-color: hsl(36, 100%, 99%);
+        height: 100%;
+        width: 45%;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        transition: all 0.7s;
+        transform: translateX(100%);
+        
+
+    }
+
+    .close-menu {
+        position: absolute;
+        right: 50px;
+    }
+
+    .nav-link {
+        color: hsl(240, 100%, 5%);
+        font-size: 24px;
+    }
+
+    .pics {
+        display: none;
+    }
+
+    .pics1 {
+        display: block;
+        width: 100%;
+    }
+
+    .highlight {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0rem 0rem  0rem;
+    }
+
+    .highlight h1 {
+        width: 100%;
+        font-size:48px;
+        line-height: 1.2;
+    }
+
+    .platforms {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .homepage-top {
+        margin-bottom: 4rem;
+    }
+
+    .breaking {
+        padding-bottom: 2.5rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .newslist {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .words h6 {
+        font-weight: 900;
+    }
+
+    .words h2 {
+        padding-bottom: 0.8rem;
+    }
+
+    .words p {
+        padding-top: 0.6rem;
+    }
+
+    
+}
